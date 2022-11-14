@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Preventivatore</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+
+    <div class="container border mt-2">
+
+      <h2 class="display-5">Preventivo Cartoncino</h2>
+
+        <div class="row p-3">
+
+          <div class="input-group p-0 mb-2 w-25">
+            <input type="number" class="form-control input_cartoncini" placeholder="Numero Cartoncini" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-primary"  onclick="calc_Fogli()" type="button">Calcola</button>
+          </div>
+
+          <table class="table table-info table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Prodotto</th>
+                  <th scope="col">Quantità</th>
+                  <th scope="col">Costo</th>
+                </tr>
+              </thead>
+
+              <tbody class="table-group-divider">
+                <tr>
+                  <th scope="row" class="fw-normal">Carta uso mano</th>
+                  <td><span class="output_fogliMano"></span> fogli</td>
+                  <td><span class="output_costoMano"></span> €</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-normal">Cartoncino</th>
+                  <td><span class="output_fogliCartoncino"></span> fogli</td>
+                  <td><span class="output_costoCartoncino"></span> €</td>
+                </tr>
+
+                <tr>
+                  <th scope="row"class="fw-normal">Inchiostro</th>
+                  <td><span class="output_quantitaInchiostro"></span> Kg</td></td>
+                  <td><span class="output_costoInchiostro"></span> €</td></td>
+                </tr>
+
+                <tr>
+                  <th scope="row"class="fw-normal">Stampa</th>
+                  <td><span class="output_minutiStampa"></span> min</td></td>
+                  <td><span class="output_costoStampa"></span> €</td></td>
+                </tr>
+
+                <tr>
+                  <th scope="row"class="fw-normal">Incollaggio</th>
+                  <td><span class="output_minutiColla"></span> min</td></td>
+                  <td><span class="output_costoColla"></span> €</td></td>
+                </tr>
+
+                <tr>
+                  <th scope="row"class="fw-normal">Taglio</th>
+                  <td><span class="output_minutiTaglio"></span> min</td></td>
+                  <td><span class="output_costoTaglio"></span> €</td></td>
+                </tr>
+
+              </tbody>
+          </table>
+
+          <table class="table table-info table-striped">
+
+              <tbody>
+                <tr>
+                  <th scope="row" class="fw-normal">Totale</th>
+                  <td></td>
+                  <td><span class="output_totale"></span> €</td>
+                </tr>
+
+                <tr>
+                  <th scope="row" class="fw-normal">Costo per Cartoncino</th>
+                  <td></td>
+                  <td><span class="output_unita"></span> €</td>
+                </tr>
+
+              </tbody>
+          </table>
+
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
